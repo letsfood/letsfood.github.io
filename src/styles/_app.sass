@@ -1,0 +1,91 @@
+
+// App
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+$images: 9
+$delay: 8
+
+.app
+	animation-duration: 8s
+	animation-fill-mode: both
+	animation-iteration-count: infinite
+	animation-name: shake
+	margin: 0 auto
+	position: relative
+	width: 35.0rem
+
+.app-iphone
+	fill: $color-primary
+	max-width: 100%
+
+.app-background
+	@extend %center
+	animation-duration: #{$delay + .5}s
+	animation-fill-mode: both
+	animation-name: hide
+	border: solid .2em $color-primary
+	height: 54.0rem
+	width: 30.0rem
+	z-index: 1000
+
+.app-image
+	@extend %center
+	animation: slideshow #{$delay * $images - $delay}s linear infinite 0s forwards
+	// animation-play-state: paused
+	animation-play-state: running
+	border: solid .2em $color-primary
+	height: 54.0rem
+	width: 30.0rem
+
+
+@for $index from 1 to $images
+	.app-image:nth-child(#{$index})
+		// @if $index != 1
+		animation-delay: #{$delay * $index - $delay}s
+		z-index: #{$images - $index + 1}
+
+@keyframes hide
+	0%
+		opacity: 1
+	99%
+		opacity: 1
+	100%
+		opacity: 0
+
+@keyframes slideshow
+	0%
+		visibility: visible
+		z-index: 100
+	12.5%
+		visibility: visible
+		z-index: 100
+	25%
+		visibility: hidden
+		z-index: 0
+	100%
+		visibility: hidden
+		z-index: 0
+
+@keyframes shake
+	90%
+		transform: translate3d(0, 0, 0)
+	100%
+		transform: translate3d(0, 0, 0)
+	91%
+		transform: translate3d(-2.0rem, 0, 0)
+	93%
+		transform: translate3d(-2.0rem, 0, 0)
+	95%
+		transform: translate3d(-2.0rem, 0, 0)
+	97%
+		transform: translate3d(-2.0rem, 0, 0)
+	99%
+		transform: translate3d(-2.0rem, 0, 0)
+	92%
+		transform: translate3d(2.0rem, 0, 0)
+	94%
+		transform: translate3d(2.0rem, 0, 0)
+	96%
+		transform: translate3d(2.0rem, 0, 0)
+	98%
+		transform: translate3d(2.0rem, 0, 0)

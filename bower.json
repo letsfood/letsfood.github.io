@@ -1,0 +1,7 @@
+{
+	"name": "letsfood.github.io",
+	"dependencies": {
+		"milligram": "latest",
+		"opbeat-js": "latest"
+	}
+}
