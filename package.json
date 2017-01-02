@@ -81,7 +81,7 @@
 		"compare": "backstop test --configPath=backstop.conf.js",
 		"gh-pages": "gh-pages -d dist -b master",
 		"prepush": "run-s gh-pages",
-		"precommit": "run-s eslint sass-lint",
+		"precommit": "npm test",
 		"prestart": "npm install",
 		"pretest": "npm install",
 		"postinstall": "bower install"
