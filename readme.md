@@ -13,7 +13,7 @@
 - [App Store](https://itunes.apple.com/app/lets-food/id1057019830)
 - [Google Play Store](https://play.google.com/store/apps/details?id=br.com.letsfood)
 - [Windows Phone Store](https://www.microsoft.com/store/apps/lets-food/9nblggh69bj7)
-- [Firefox Marketplace](https://marketplace.firefox.com/app/lets-food/)
+- [Firefox Marketplace](https://marketplace.firefox.com/app/letsfood)
 - [App World Store](#)
 - [Amazon Store](#)
 
