@@ -67,7 +67,7 @@
 		"complexity:scripts": "plato -r -d test/complexity -e .eslintrc -x .json src/**/*.js && opn test/complexity/index.html",
 		"compare": "backstop test --configPath=backstop.conf.js",
 		"reference": "backstop reference --configPath=backstop.conf.js",
-		"publish": "gh-pages -d dist -b gh-pages",
+		"publish": "pwa-prepare dist && gh-pages -d dist -b master",
 		"prepush": "run-s build publish",
 		"precommit": "run-p lint"
 	}
