@@ -1,0 +1,19 @@
+{
+	"name": "Lets Food",
+	"short_name": "Lets Food",
+	"icons": [
+		{
+			"src": "images/android-chrome-192x192.png",
+			"type": "image/png",
+			"sizes": "192x192"
+		}, {
+			"src": "images/android-chrome-512x512.png",
+			"type": "image/png",
+			"sizes": "512x512"
+		}
+	],
+	"start_url": "index.html",
+	"background_color": "#dbd8c7",
+	"theme_color": "#dbd8c7",
+	"display": "standalone"
+}
