@@ -20,15 +20,15 @@
 		"browser-sync": "^2.18.1",
 		"cname": "^0.0.2",
 		"copycopy": "0.0.2",
-		"csscompile": "^0.2.0",
+		"csscompile": "^0.3.0",
 		"editorconfig-tools": "^0.1.1",
 		"eslint": "^4.4.1",
 		"eslint-config-styled": "0.0.2",
 		"gh-pages": "^1.0.0",
-		"htmlcompile": "^0.3.0",
+		"htmlcompile": "^0.4.1",
 		"husky": "^0.14.3",
-		"imgcompile": "^0.0.0",
-		"jscompile": "^0.0.2",
+		"imgcompile": "^0.1.0",
+		"jscompile": "^0.2.1",
 		"npm-run-all": "^4.0.2",
 		"onchange": "^3.0.2",
 		"opn-cli": "^3.1.0",
@@ -36,7 +36,7 @@
 		"pwa-prepare": "0.0.5",
 		"rimraf": "^2.5.4",
 		"sass-lint": "^1.10.2",
-		"surge": "^0.19.0"
+		"surge": "^0.23.1"
 	},
 	"scripts": {
 		"start": "run-s build watch",
