@@ -15,7 +15,7 @@
 		"opbeat-js": "latest"
 	},
 	"devDependencies": {
-		"backstopjs": "^3.0.36",
+		"backstopjs": "^6.1.4",
 		"bowerless": "^0.0.6",
 		"browser-sync": "^2.18.1",
 		"cname": "^0.0.2",
